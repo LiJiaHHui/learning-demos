@@ -1,0 +1,178 @@
+@import '~antd/dist/antd.css';
+
+.bgcolor{
+    overflow: hidden;
+}
+.nav{
+    height: 3.25rem;
+    width: 100%;
+    background-color: #2cbafe;
+    display: flex;
+    flex-direction: column;
+    .nav-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.425rem 0.625rem 0;
+        .info-text{
+            font-size: .26933rem;
+            color: #fff;
+            padding-top: .1rem;
+            white-space: nowrap;
+        }
+        .nav-search{
+            width: 10.19733rem;
+            height: 1.28rem;
+            border-radius: .36133rem;
+            background: #fff;
+            .nav-img{
+                padding-top: .2rem;
+            }
+        }
+    }
+    .nav-text{
+        font-weight: 400;
+        font-size: .7067rem;
+        color: #fff!important;
+        padding-top: 0.325rem;
+        display: flex;
+        .right{
+            position: absolute;
+            right: 1.1rem;
+        }
+    }
+}
+.nav-text-select{
+    font-weight: 700;
+    font-size: .81067rem;
+    color: #fff!important;
+}
+.container-box{
+    align-items: center;
+    width: 7.31733rem;
+    height: 5.94933rem;
+    border: 0.164rem solid rgb(44, 186, 254);
+     width: calc(95.7vw - 1.128rem); 
+     border-radius: 0.328rem;
+     margin-left: .9rem;
+     display: flex;
+     flex-direction: row;
+     margin-top: 0.325rem;
+     overflow: hidden;
+     .container-img{
+        height: 5rem;
+        width: 5.375rem;
+        padding: 0.125rem;
+    }
+     .container-box-right{
+        width: 13rem;
+        height: 3.94933rem;
+        margin-left: -0.325rem;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        .container-name{
+            line-height: 0.32533rem;
+            white-space: normal;
+            font-size: .69733rem;
+            padding-left: .5rem;
+            margin-top: .25rem;
+        }
+
+    }
+}
+.container-price-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.375rem .2rem;
+    line-height: 1.72533rem;
+    .container-mark{
+        font-size: .68rem;
+        font-weight: 600;
+        color: red;
+        margin-top: 0.175rem;
+        .container-prices{
+            color: red;
+            font-size: .768rem;
+            font-weight: 600;
+        }
+    }
+    
+    .container-add{
+        height: 1.25rem;
+        width: 1.25rem;
+        flex: 0 0 .024rem;
+        text-align: center;
+        margin-top:0.325rem;
+        }
+}
+
+.listPic{
+    width: 100vw;
+    height: 12rem;
+    margin: .25rem 0;
+}
+
+.imgs{
+    width: 100%;
+    height: 7.016rem;
+    padding:.2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     margin-bottom: 3rem;
+     width: 100%;
+    padding: 0.06933rem;
+    .card-item{
+        border: 0.164rem solid rgb(44, 186, 254);
+        height: 9.6875rem;
+        width: calc((100vw - 2.552rem) / 2);
+        border-radius: 0.625rem;
+        display:flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        overflow: hidden;
+        .name{
+            font-weight: 700;
+            line-height: 0.72533rem;
+            white-space: normal;
+            font-size: .69733rem;
+            padding-left: 1.25rem;
+        }
+
+    }
+}
+        .card-price-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0.325rem 1.3rem;
+            line-height: 1.72533rem;
+            .mark{
+                font-size: .68rem;
+                font-weight: 600;
+                color: red;
+                margin-top: 0.1375rem;
+                .prices{
+                    color: red;
+                    font-size: .768rem;
+                    font-weight: 600;
+                }
+            }
+            .add{
+                height: 1.25rem;
+                width: 1.25rem;
+                flex: 0 0 .024rem;
+                text-align: center;
+                margin-top:0.325rem ;
+            }
+        }
+
+
+
+
+
