@@ -1,15 +1,21 @@
 .App {
   /* text-align: center; */
   display: flex;
-  width: 90vw;
+  width: 100vw;
 }
 .App>.pic{
-  height: 90vh;
+  margin:10px 10px;
+  height: 95vh;
   text-align: center;
   justify-content: center;
   flex: 0.5;
   transition: flex .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App>.pic.active{
   flex: 5;
+
 }
