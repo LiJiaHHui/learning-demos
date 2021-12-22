@@ -1,5 +1,6 @@
 import './App.css';
-import { useEffect,useState  } from 'react';
+// useEffect,
+import { useState  } from 'react';
 const picMap=[
   'https://lijiahhui.github.io/image/%E6%9D%BE%E9%9B%80.jpg',
   'https://lijiahhui.github.io/image/%E7%81%AB%E7%84%B0%E9%B8%9F.jpg',
@@ -11,7 +12,7 @@ const picMap=[
 
 function App() {
   // 与v-model的区别
-  // 大概是双向数据绑定与单向
+  // 大概是双向数据绑定与单向数据流
   const [initData,setInitData]=useState(0) 
   const changeHandle=(item)=>setInitData(item)
   return (
@@ -22,7 +23,14 @@ function App() {
             className={`pic ${ind===initData?'active':''}`}
             style={{background:`url(${item})`}}
             key={ item + ind}
-            onClick={changeHandle.bind(this,ind)}
+            onClick={function(){
+              changeHandle.bind(this,ind)
+              console.log('this',this);
+             } 
+            }
+            // onClick={()=>{changeHandle(ind)
+            // console.log('this',this);
+            // }}//箭头函数指向定义时所在的对象,此处指向map？还是app的
           >
           </div> 
         ))
@@ -43,6 +51,7 @@ function App() {
       </header> */}
     </div>
   );
+
 }
 
 export default App;
