@@ -23,4 +23,11 @@
 
 在网页开发中，this的指向一般是window、或者调用事件的对象，但react中this默认指向undefined，react中可以使用箭头函数、或者bind来显示改变this指向，使其指向当前的实例。
 
+摘自官网的一段话
+```
+你必须谨慎对待 JSX 回调函数中的 this，在 JavaScript 中，class 的方法默认不会绑定this。如果你忘记绑定 this.handleClick 并把它传入了 onClick，当你调用这个函数的时候 this 的值为 undefined。
+
+这并不是 React 特有的行为；这其实与 JavaScript 函数工作原理有关。通常情况下，如果你没有在方法后面添加 ()，例如 onClick={this.handleClick}，你应该为这个方法绑定 this。
+```
+回调函数是指，函数作为一个参数被传递。回调函数丢失this是因为被函数调用，此时指向调用函数？
 bind、apply、call的区别：bind不会立即执行，生成一个函数，appl和call都会立即执行，区别在于apply接受参数数组，call接受参数序列
