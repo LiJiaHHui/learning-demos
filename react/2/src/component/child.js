@@ -12,7 +12,7 @@ class child extends React.Component {
       <div>
 {arr.map((item) => {
         <div className={'circle'} >
-          {item}
+          
         </div>
       })}
       </div>
