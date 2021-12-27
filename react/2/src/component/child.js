@@ -3,12 +3,18 @@ import React from 'react';
 class child extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {  }
+    this.state = { arr:[1,2,3,4] }
   }
-  render() { 
+  render() {
+    let arr= this.state.arr 
     return ( 
-      <div className={'circle'} >
-
+     
+      <div>
+{arr.map((item) => {
+        <div className={'circle'} >
+          {item}
+        </div>
+      })}
       </div>
      );
   }
