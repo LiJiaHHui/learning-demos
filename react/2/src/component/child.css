@@ -1,0 +1,7 @@
+.circle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border:5px solid pink;
+  background-color: white;
+}
