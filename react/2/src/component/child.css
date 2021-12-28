@@ -1,3 +1,8 @@
+.pos{
+  position: relative;
+  
+}
+
 .display{
   display: flex;
   flex-direction: row;
@@ -20,5 +25,8 @@
 .process{
   height: 5px;
   background: var(--a--);
- transform: translateY(50%);
+ /* transform: translateY(50%); */
+ position: absolute;
+ top: 50%;
+ left: 0%;
 }

@@ -15,10 +15,11 @@ class child extends React.Component {
     }
     return (
       
-      <div className='display' style={ {width :width}}>
+      <div className='pos' style={ {width :width} } >
          <div className='process' style={{width:proWidth(33.33), display:'inline-block'}} >
-        {/* 进度条 */}
+        {/* 进度条 */}</div>
         {/* 渲染圆 */}
+        <div className='display' >
         {arr.map((item,ind) =>
               (<div className={curInd>=ind?'pinkCircle':'blueCircle'} key={ind}></div>)
               )
