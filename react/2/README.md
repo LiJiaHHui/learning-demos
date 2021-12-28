@@ -2,6 +2,7 @@
 
 🐱‍🐉JSX 只是为 React.createElement(component, props, ...children) 函数提供的语法糖。
 
+<h3>setState与异步</h3>
 🐱‍🏍setState接受对象或者异步函数,可以用于修改state的值写法
 ```
 this.setState({curInd:--this.state.curInd})
@@ -12,6 +13,35 @@ this.setState({curInd:--this.state.curInd})
 this.setState({curInd:--this.state.curInd},function(){
   //callback
 })
+```
+
+<h3>react中的super</h3>
+
+class继承中通过super继承了父类的实例属性和原型属性，但是this是指向本实例。实例属性指的是在构造函数constructor中定义的属性,原型属性指的是不在构造函数中定义的属性,如toString👇。
+```
+ class A {
+      constructor(name,color) {
+      this.name = name;
+      this.color = color;
+    }
+    // toString 是原型对象上的属性
+    toString() {
+      console.log('name:' + this.name + ',color:' + this.color);
+
+    }
+  }
+
+ class B extends A{
+  constructor() {
+    super('cat','white');
+  }
+  toString() {
+    console.log(super.toString());
+  }
+ }
+
+ var cat = new B()
+ cat.toString();  //=>name:cat,color:white
 ```
 
 🎭css小知识
