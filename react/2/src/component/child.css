@@ -1,7 +1,24 @@
-.circle{
+.display{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pinkCircle{
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border:5px solid pink;
   background-color: white;
+}
+.blueCircle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border:5px solid rgb(31, 184, 245);
+  background-color: white;
+}
+.process{
+  height: 5px;
+  background: var(--a--);
+ transform: translateY(50%);
 }
