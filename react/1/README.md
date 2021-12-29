@@ -29,7 +29,7 @@
 
 这并不是 React 特有的行为；这其实与 JavaScript 函数工作原理有关。通常情况下，如果你没有在方法后面添加 ()，例如 onClick={this.handleClick}，你应该为这个方法绑定 this。
 ```
-*回调函数是指，函数作为一个参数被传递。回调函数丢失this是因为被函数调用，此时指向调用函数？？？*
+回调函数是指，函数作为一个参数被传递。
 
 ```
  <button onClick={this.handleClick}>
@@ -59,11 +59,14 @@ var foo = new Foo();
 foo.render(); // 输出结果是什么？
 ```
 
-this.handleClick作为回调函数被调用，此时this指向全局window，或者严格模式下指向undefined。由于class内部执行的是严格模式，实际上输出的是undefined。
+class中的this默认指向本实例，但是this.handleClick作为回调函数被调用，this指向其运行环境，由于class内部执行的是严格模式，实际上输出的是undefined。
 👌所以到这里就能明白，为什么需要bind修改this指向以及不加bind的话指向的是undefined。
 
+解决方法可以有：bind显示绑定、使用箭头函数，箭头函数的this总是指向定义时所在的对象、
 
 bind、apply、call的区别：bind不会立即执行，生成一个函数，appl和call都会立即执行，区别在于apply接受参数数组，call接受参数序列
+
+
 
 🎃参考文章：
 

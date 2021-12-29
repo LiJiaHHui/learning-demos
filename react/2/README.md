@@ -44,6 +44,8 @@ class继承中通过super继承了父类的实例属性和原型属性，但是t
  cat.toString();  //=>name:cat,color:white
 ```
 
+
+
 🎭css小知识
 :root 与 var(),自定义一些css样式，比如颜色，作为一个全局变量可以在css中使用，有助于全局样式统一。
 :root是一个伪类，表示文档根元素，

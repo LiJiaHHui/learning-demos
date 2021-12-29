@@ -2,7 +2,7 @@ import {Component} from 'react';
 // useState
 import '../App.css';
 import Children from '../component/child'
-class father extends Component {
+class Father extends Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -35,4 +35,4 @@ class father extends Component {
   }
 }
  
-export default father;
+export default Father;
