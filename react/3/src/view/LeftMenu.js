@@ -1,12 +1,13 @@
-import {Component} from 'react';
-class LeftMenu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
+import {useState} from 'react';
+const LeftMenu=(props)=> {
+  const clickHandle=()=>{
+    props.onClick&&props.changVal()
   }
-  render() { 
-    return ( <div></div> );
-  }
+    return ( 
+     <div>
+    {<div onClick={clickHandle.bind()}>
+      </div>}
+     </div> );
 }
  
 export default LeftMenu;

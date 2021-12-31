@@ -6,7 +6,13 @@ class NavList extends Component {
   }
   render() { 
     return (
-      <div></div>
+      <div>
+        {
+          this.props.NavData.map((item,ind)=>(
+            <li dangerouslySetInnerHTML={{__html:item}} key={ind}></li>
+          ))
+        }
+      </div>
       );
   }
 }

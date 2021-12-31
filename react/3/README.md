@@ -8,3 +8,16 @@
 ```
 export {default as Content} from './content'
 ```
+
+<h4>渲染html字符串</h4>
+react中提供了dangerouslySetInnerHtml来将dom字符串转换为dom节点
+__html渲染动态数据
+```
+常规字符串写法
+<p key={ind}>{item}</p>
+
+
+动态插入dom节点
+<p key={ind} dangerouslySetInnerHTML={{__html:`<a href="#"> ${item}</a>`}}></p>
+
+````
